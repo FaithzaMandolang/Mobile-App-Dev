@@ -8,7 +8,8 @@ const UserCard = ({user}) => {
       <Image source={{uri: user.avatar}} style={styles.avatar} />
       <View style={styles.info}>
         <Text style={styles.name}>
-          {user.first_name} {user.last_name}
+          <Text style={styles.first_name}>{user.first_name}</Text>{' '}
+          {user.last_name}
         </Text>
         <Text style={styles.email}>{user.email}</Text>
       </View>
@@ -22,26 +23,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     padding: 15,
-    borderRadius: 5,
-    borderColor: 'black',
-    borderWidth: 1,
-    marginBottom: 10,
+    borderRadius: 15,
+    borderColor: 'grey',
+    borderWidth: 0.5,
+    marginBottom: 20,
   },
   avatar: {
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
     borderRadius: 25,
   },
   info: {
     marginLeft: 10,
   },
-  name: {
+  first_name: {
     fontSize: 16,
     fontWeight: 'bold',
   },
+  name: {
+    fontSize: 16,
+  },
   email: {
     fontSize: 14,
-    color: 'gray',
+    color: 'black',
   },
 });
 
