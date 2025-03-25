@@ -10,6 +10,8 @@ import pertemuan11 from './pertemuan11';
 import exercise4 from './exe4';
 import Signup from './signup';
 import regist from './exercise6';
+import restAPI from './restAPI';
+import exercise7 from './exercise7';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => regist);
+AppRegistry.registerComponent(appName, () => exercise7);
